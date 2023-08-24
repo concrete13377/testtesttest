@@ -18,11 +18,11 @@ Usage:
 
 Example:  
  
-<img src="1.jpg" width="300">+
-<img src="2.jpg" width="145">=
-<img src="test1_result.jpg" width="200">  
+<img src="static/1.jpg" width="300">+
+<img src="static/2.jpg" width="145">=
+<img src="static/test1_result.jpg" width="200">  
 
 
-<img src="3.jpg" width="300">+
-<img src="4.jpg" width="150">=
-<img src="test2_result.jpg" width="200">
+<img src="static/3.jpg" width="300">+
+<img src="static/4.jpg" width="150">=
+<img src="static/test2_result.jpg" width="200">
