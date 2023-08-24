@@ -9,10 +9,10 @@ Usage:
     ```docker build -t testtesttest .```
 
 2. To run 1 time  
-    ```docker run --gpus all --shm-size 8GB -v /pathtocode/testtesttest:/app -v /pathtodata/data:/data testtesttest python /app/run.py /data/1.jpg /data/2.jpg /data/output```
+    ```docker run --gpus all --shm-size 8GB -v "$(pwd):/app" -v /pathtodata/data:/data testtesttest python /app/run.py /data/1.jpg /data/2.jpg /data/output```
 
 3. Or run container detached and run infer several times without removing container  
-    ```docker run -d --name test1 --gpus all --shm-size 8GB -v /pathtocode/testtesttest:/app -v /pathtodata/data:/data testtesttest sleep inf```    
+    ```docker run -d --name test1 --gpus all --shm-size 8GB -v "$(pwd):/app" -v /pathtodata/data:/data testtesttest sleep inf```    
     
     ```docker exec -it test1 python /app/run.py /data/1.jpg /data/2.jpg /data/output```
 
