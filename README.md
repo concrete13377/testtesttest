@@ -1,3 +1,5 @@
+Nvidia-docker is needed
+
 Usage:
 
 1. To run generation   
